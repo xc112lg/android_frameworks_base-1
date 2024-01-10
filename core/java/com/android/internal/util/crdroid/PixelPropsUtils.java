@@ -318,7 +318,7 @@ public class PixelPropsUtils {
         setPropValue("MANUFACTURER", "Xiaomi");
         setPropValue("DEVICE", "hermes");
         setPropValue("ID", "LRX22G");
-        setPropValue("FINGERPRINT", "Xiaomi/hermes/hermes:5.0.2/LRX22G/V9.6.3.0.LHMMIFD:user/release-keys");
+        setPropValue("FINGERPRINT", "Xiaomi/hermes/hermes:5.0.2/LRX22G/V9.6.1.0.LHMCNFD:user/release-keys");
         setPropValue("MODEL", "Redmi Note 2");
         setPropValue("PRODUCT", "hermes");
         setVersionFieldString("SECURITY_PATCH", "2016-12-01");
