@@ -316,12 +316,12 @@ public class PixelPropsUtils {
         // Alter build parameters for avoiding hardware attestation enforcement
         setPropValue("BRAND", "Xiaomi");
         setPropValue("MANUFACTURER", "Xiaomi");
-        setPropValue("DEVICE", "ferrari");
+        setPropValue("DEVICE", "hermes");
         setPropValue("ID", "LRX22G");
-        setPropValue("FINGERPRINT", "Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V7.5.1.0.LXICNDE:user/release-keys");
-        setPropValue("MODEL", "Mi 4i");
-        setPropValue("PRODUCT", "ferrari");
-        setVersionFieldString("SECURITY_PATCH", "2016-06-01");
+        setPropValue("FINGERPRINT", "Xiaomi/hermes/hermes:5.0.2/LRX22G/V9.6.3.0.LHMMIFD:user/release-keys");
+        setPropValue("MODEL", "Redmi Note 2");
+        setPropValue("PRODUCT", "hermes");
+        setVersionFieldString("SECURITY_PATCH", "2016-12-01");
     }
 
     private static boolean isCallerSafetyNet() {
