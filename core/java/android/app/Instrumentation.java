@@ -99,8 +99,7 @@ public class Instrumentation {
      * @hide
      */
     @Retention(RetentionPolicy.SOURCE)
-    @IntDef({0, UiAutomation.FLAG_DONT_SUPPRESS_ACCESSIBILITY_SERVICES,
-            UiAutomation.FLAG_DONT_USE_ACCESSIBILITY})
+    @IntDef({0, UiAutomation.FLAG_DONT_SUPPRESS_ACCESSIBILITY_SERVICES})
     public @interface UiAutomationFlags {};
 
 
