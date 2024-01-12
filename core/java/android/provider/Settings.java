@@ -5511,14 +5511,6 @@ public final class Settings {
         @Readable
         public static final String MULTI_AUDIO_FOCUS_ENABLED = "multi_audio_focus_enabled";
 
-
-        /**
-         * Whether to show charging animation
-         * @hide
-         */
-        public static final String CHARGING_ANIMATION = "charging_animation";
-
-
         /**
          * Whether desktop mode is enabled or not.
          * 0 = off
