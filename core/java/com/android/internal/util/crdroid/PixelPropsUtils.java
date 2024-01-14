@@ -312,25 +312,15 @@ public class PixelPropsUtils {
     }
 
     private static void spoofBuildGms() {
-        if (spoofBuildGms == null || spoofBuildGms.length == 0) return;
-        // Alter build parameters for avoiding hardware attestation enforcement
-        for (String spoof : spoofBuildGms) {
-            String[] range = spoof.split(";");
-
-            String type = range[0];
-            String name = range[1];
-            String value = range[2];
-
-            if (type.equals("PropValue")) {
-                setPropValue(name, value);
-            } else if (type.equals("PropValueLong")) {
-                setPropValue(name, Long.valueOf(value));
-            } else if (type.equals("VersionField")) {
-                setVersionField(name, Integer.valueOf(value));
-            } else if (type.equals("VersionFieldString")) {
-                setVersionFieldString(name, value);
-            }
-        }
+        // Alter build parameters to avoid hardware attestation enforcement
+        setPropValue("BRAND", "YU nitrogen");
+        setPropValue("MANUFACTURER", "YU");
+        setPropValue("DEVICE", "YUREKA");
+        setPropValue("ID", "LMY49J");
+        setPropValue("FINGERPRINT", "YU/YUREKA/YUREKA:5.1.1/LMY49J/YOG4PAS8A4:user/release-keys");
+        setPropValue("MODEL", "YU5510");
+        setPropValue("PRODUCT", "YUREKA");
+        setVersionFieldString("SECURITY_PATCH", "2015-11-01");
     }
 
     private static boolean isCallerSafetyNet() {
