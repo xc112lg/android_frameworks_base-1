@@ -1177,40 +1177,16 @@ public class Instrumentation {
             event.setSource(InputDevice.SOURCE_TOUCHSCREEN);
         }
 
-        syncInputTransactionsAndInjectEventIntoSelf(event);
-    }
 
-    private void syncInputTransactionsAndInjectEventIntoSelf(MotionEvent event) {
-        final boolean syncBefore = event.getAction() == MotionEvent.ACTION_DOWN
-                || event.isFromSource(InputDevice.SOURCE_MOUSE);
-        final boolean syncAfter = event.getAction() == MotionEvent.ACTION_UP;
+
+
+
+
+
 
         try {
-            if (syncBefore) {
-                WindowManagerGlobal.getWindowManagerService()
-                        .syncInputTransactions(true /*waitForAnimations*/);
-            }
-
-            // Direct the injected event into windows owned by the instrumentation target.
-            InputManager.getInstance().injectInputEvent(
-                    event, InputManager.INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH, Process.myUid());
-
-            if (syncAfter) {
-                WindowManagerGlobal.getWindowManagerService()
-                        .syncInputTransactions(true /*waitForAnimations*/);
-            }
-        } catch (RemoteException e) {
-            e.rethrowFromSystemServer();
-        }
-    }
-
-    /**
-     * Dispatches a trackball event into the currently focused window, and waits for it to be
-     * processed.
-     * <p>
-     * This method blocks until the recipient has finished handling the event. Note that the
-     * recipient may <em>not</em> have completely finished reacting from the event when this method
-     * returns. For example, it may still be in the process of updating its display or UI contents
+            WindowManagerGlobal.getWindowManagerService().injectInputAfterTransactionsApplied(event,
+                    InputManager.INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH);
      * upon reacting to the injected event.
      *
      * @param event A motion event describing the trackball action.  (As noted in 
