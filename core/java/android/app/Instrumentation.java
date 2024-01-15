@@ -2329,13 +2329,7 @@ public class Instrumentation {
                 mUiAutomation.connect(flags);
                 return mUiAutomation;
             }
-            try {
-                mUiAutomation.connectWithTimeout(flags, CONNECT_TIMEOUT_MILLIS);
-                return mUiAutomation;
-            } catch (TimeoutException e) {
-                mUiAutomation.destroy();
-                mUiAutomation = null;
-            }
+
         }
         return null;
     }
