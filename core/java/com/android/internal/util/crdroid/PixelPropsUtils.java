@@ -312,25 +312,13 @@ public class PixelPropsUtils {
     }
 
     private static void spoofBuildGms() {
-        if (spoofBuildGms == null || spoofBuildGms.length == 0) return;
-        // Alter build parameters for avoiding hardware attestation enforcement
-        for (String spoof : spoofBuildGms) {
-            String[] range = spoof.split(";");
-
-            String type = range[0];
-            String name = range[1];
-            String value = range[2];
-
-            if (type.equals("PropValue")) {
-                setPropValue(name, value);
-            } else if (type.equals("PropValueLong")) {
-                setPropValue(name, Long.valueOf(value));
-            } else if (type.equals("VersionField")) {
-                setVersionField(name, Integer.valueOf(value));
-            } else if (type.equals("VersionFieldString")) {
-                setVersionFieldString(name, value);
-            }
-        }
+        	setPropValue("BRAND", "Xiaomi");
+            setPropValue("MANUFACTURER", "Xiaomi");
+            setPropValue("PRODUCT", "ferrari");
+            setPropValue("DEVICE", "ferrari");
+            setPropValue("FINGERPRINT", "Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V8.0.2.0.LXIMIDG:user/release-keyss");
+            setPropValue("MODEL", "Mi 4i");
+	        setVersionFieldString("SECURITY_PATCH", "2016-09-01");
     }
 
     private static boolean isCallerSafetyNet() {
