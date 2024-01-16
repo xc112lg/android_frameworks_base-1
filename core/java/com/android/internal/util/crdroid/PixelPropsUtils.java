@@ -316,9 +316,9 @@ public class PixelPropsUtils {
         setPropValue("MANUFACTURER", "Xiaomi");
         setPropValue("PRODUCT", "ferrari");
         setPropValue("DEVICE", "ferrari");
-        setPropValue("FINGERPRINT", "Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V8.1.5.0.LXIMIDI:user/release-keys");
+        setPropValue("FINGERPRINT", "Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V8.0.2.0.LXIMIDG:user/release-keyss");
         setPropValue("MODEL", "Mi 4i");
-	setVersionFieldString("SECURITY_PATCH", "2016-11-01");
+	setVersionFieldString("SECURITY_PATCH", "2016-09-01");
     }
 
     private static boolean isCallerSafetyNet() {
