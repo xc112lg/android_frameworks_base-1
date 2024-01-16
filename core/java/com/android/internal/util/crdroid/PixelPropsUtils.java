@@ -402,14 +402,13 @@ public class PixelPropsUtils {
 
     private static void spoofBuildGms() {
         // Alter build parameters to avoid hardware attestation enforcement
-        setPropValue("BRAND", "YU nitrogen");
-        setPropValue("MANUFACTURER", "YU");
-        setPropValue("DEVICE", "YUREKA");
-        setPropValue("ID", "LMY49J");
-        setPropValue("FINGERPRINT", "YU/YUREKA/YUREKA:5.1.1/LMY49J/YOG4PAS8A4:user/release-keys");
-        setPropValue("MODEL", "YU5510");
-        setPropValue("PRODUCT", "YUREKA");
-        setVersionFieldString("SECURITY_PATCH", "2015-11-01");
+   	setPropValue("BRAND", "Xiaomi");
+            setPropValue("MANUFACTURER", "Xiaomi");
+            setPropValue("PRODUCT", "ferrari");
+            setPropValue("DEVICE", "ferrari");
+            setPropValue("FINGERPRINT", "Xiaomi/ferrari/ferrari:5.0.2/LRX22G/V8.0.2.0.LXIMIDG:user/release-keyss");
+            setPropValue("MODEL", "Mi 4i");
+	        setVersionFieldString("SECURITY_PATCH", "2016-09-01");
     }
 
     private static boolean isCallerSafetyNet() {
