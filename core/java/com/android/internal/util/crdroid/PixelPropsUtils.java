@@ -59,6 +59,7 @@ public class PixelPropsUtils {
     private static final String[] packagesToChangePixel8Pro = {
             "com.google.android.apps.bard",
             "com.google.android.apps.customization.pixel",
+            "com.globe.gcash.android",
             "com.google.android.apps.emojiwallpaper",
             "com.google.android.apps.privacy.wildlife",
             "com.google.android.apps.wallpaper",
