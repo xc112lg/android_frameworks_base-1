@@ -57,7 +57,7 @@
     <string name="keyguard_plugged_in_turbo_charging"><xliff:g id="percentage">%s</xliff:g> • 渦輪閃充中</string>
     <!-- On The Go -->
     <string name="onthego_notif_ticker">OTG 模式已啟動</string>
-    <string name="onthego_notif_title">OTG模式正處於啟用狀態</string>
+    <string name="onthego_notif_title">OTG 模式正處於啟用狀態</string>
     <string name="onthego_notif_stop">停止</string>
     <string name="onthego_notif_options">選項</string>
     <string name="onthego_notif_error">無法啟動 OTG 模式</string>
