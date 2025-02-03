@@ -666,7 +666,8 @@ public class QSAnimator implements QSHost.Callback, PagedTileLayout.PageListener
     }
 
     private void getRelativePosition(int[] loc1, View view, View parent) {
-        loc1[0] = 0 + view.getWidth() / 2;
+        if (view == null) return;
+        loc1[0] = view.getWidth() / 2;
         loc1[1] = 0;
         getRelativePositionInt(loc1, view, parent);
     }
