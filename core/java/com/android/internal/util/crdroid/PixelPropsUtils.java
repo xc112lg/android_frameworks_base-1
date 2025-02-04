@@ -104,6 +104,7 @@ public final class PixelPropsUtils {
             "com.gameloft.android.ANMP.GloftA9HM",
             "com.madfingergames.legends",
             "com.pearlabyss.blackdesertm",
+            "com.shopee.ph",
             "com.pearlabyss.blackdesertm.gl"
     };
 
