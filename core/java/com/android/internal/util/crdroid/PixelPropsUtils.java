@@ -95,6 +95,8 @@ public final class PixelPropsUtils {
             "com.google.android.wallpaper.effects",
             "com.google.pixel.livewallpaper",
             "com.netflix.mediaclient",
+            "com.lazada.android",
+            "com.shopee.ph",
             "com.nhs.online.nhsonline"
     };
 
